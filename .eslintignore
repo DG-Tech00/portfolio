@@ -1,8 +1,27 @@
+# Dependencies
 node_modules
+
+# Build outputs
 .next
 out
 build
 dist
+.turbo
+
+# Config files
 *.config.js
 *.config.ts
+next-env.d.ts
+
+# Testing
+coverage
+playwright-report
+test-results
+.playwright
+jest.setup.js
+
+# Tools
 .husky
+
+# Public assets (não precisam de lint)
+public

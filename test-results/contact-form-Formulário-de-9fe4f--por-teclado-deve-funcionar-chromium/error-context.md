@@ -1,0 +1,200 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - link "Pular para o conteúdo principal" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - navigation "Menu principal" [ref=e3]:
+    - generic [ref=e4]:
+      - link "Douglas" [ref=e5] [cursor=pointer]:
+        - /url: /
+      - list [ref=e6]:
+        - listitem [ref=e7]:
+          - link "Sobre" [ref=e8] [cursor=pointer]:
+            - /url: "#about"
+        - listitem [ref=e9]:
+          - link "Projetos" [active] [ref=e10] [cursor=pointer]:
+            - /url: "#projects"
+        - listitem [ref=e11]:
+          - link "Contato" [ref=e12] [cursor=pointer]:
+            - /url: "#contact"
+      - button "Alternar tema" [ref=e14] [cursor=pointer]:
+        - img [ref=e15] [cursor=pointer]
+        - generic [ref=e21] [cursor=pointer]: Alternar tema
+  - main [ref=e22]:
+    - generic [ref=e25]:
+      - heading "Douglas Souza" [level=1] [ref=e27]
+      - paragraph [ref=e29]: Desenvolvedor Full-Stack
+      - paragraph [ref=e31]: Sou um desenvolvedor com mais de 5 anos de experiência em desenvolvimento de software, criação de microserviços e integração de sistemas. Especializado em Node.js com TypeScript, tenho sólido conhecimento em arquitetura de software, padrões de projeto (SOLID, Clean Architecture) e boas práticas de desenvolvimento ágil.
+      - generic [ref=e33]:
+        - link "Entre em Contato" [ref=e34] [cursor=pointer]:
+          - /url: "#contact"
+          - button "Entre em Contato" [ref=e35] [cursor=pointer]:
+            - img [ref=e36] [cursor=pointer]
+            - text: Entre em Contato
+        - link "GitHub" [ref=e39] [cursor=pointer]:
+          - /url: https://github.com/Douglas-00
+          - button "GitHub" [ref=e40] [cursor=pointer]:
+            - img [ref=e41] [cursor=pointer]
+            - text: GitHub
+        - link "LinkedIn" [ref=e44] [cursor=pointer]:
+          - /url: https://www.linkedin.com/in/douglas-alves-de-souza-b3b901179/
+          - button "LinkedIn" [ref=e45] [cursor=pointer]:
+            - img [ref=e46] [cursor=pointer]
+            - text: LinkedIn
+    - generic [ref=e51]:
+      - heading "Sobre Mim" [level=2] [ref=e53]
+      - generic [ref=e54]:
+        - img "Foto de Douglas Souza" [ref=e57]
+        - generic [ref=e58]:
+          - generic [ref=e59]:
+            - heading "Olá, eu sou Douglas Souza" [level=3] [ref=e60]:
+              - text: Olá, eu sou
+              - generic [ref=e61]: Douglas Souza
+            - heading "Desenvolvedor Full-Stack" [level=4] [ref=e62]
+          - paragraph [ref=e64]: Sou um desenvolvedor com mais de 5 anos de experiência em desenvolvimento de software, criação de microserviços e integração de sistemas. Especializado em Node.js com TypeScript, tenho sólido conhecimento em arquitetura de software, padrões de projeto (SOLID, Clean Architecture) e boas práticas de desenvolvimento ágil.
+          - paragraph [ref=e66]: Minha experiência inclui desenvolvimento backend robusto com NestJS, integração com bancos de dados relacionais e NoSQL, implementação de sistemas de mensageria (RabbitMQ, Redis) e automação de processos. Atualmente atuo como Desenvolvedor Full Stack PL, liderando revisões de código e orientando novos desenvolvedores através de Pair Programming.
+          - generic [ref=e68]:
+            - heading "Minhas Habilidades:" [level=4] [ref=e69]
+            - generic [ref=e71]:
+              - generic [ref=e73]: Node.js
+              - generic [ref=e75]: TypeScript
+              - generic [ref=e77]: NestJS
+              - generic [ref=e79]: React
+              - generic [ref=e81]: Next.js
+              - generic [ref=e83]: PostgreSQL
+              - generic [ref=e85]: MySQL
+              - generic [ref=e87]: MongoDB
+              - generic [ref=e89]: RabbitMQ
+              - generic [ref=e91]: Redis
+              - generic [ref=e93]: Docker
+              - generic [ref=e95]: Jest
+              - generic [ref=e97]: Swagger
+              - generic [ref=e99]: Git
+              - generic [ref=e101]: Python
+              - generic [ref=e103]: PHP
+    - generic [ref=e105]:
+      - heading "Meus Projetos" [level=2] [ref=e107]
+      - generic [ref=e109]:
+        - article [ref=e111]:
+          - img "API-Transacoes-bancarias" [ref=e113]
+          - generic [ref=e114]:
+            - heading "API-Transacoes-bancarias" [level=3] [ref=e115]
+            - paragraph [ref=e116]: Este é um projeto de API de um sistema bancário desenvolvido com NestJS e Sequelize, projetado para gerenciar transações bancárias, incluindo depósito, saque e transferência entre contas. Ele suporta múltiplas transações concorrentes, garantindo a integridade do saldo das contas.
+            - generic [ref=e117]:
+              - generic [ref=e118]: NestJS
+              - generic [ref=e119]: Prisma
+              - generic [ref=e120]: PostgreSQL
+            - link "Código" [ref=e122] [cursor=pointer]:
+              - /url: https://github.com/Douglas-00/API-Transacoes-bancarias
+              - button "Código" [ref=e123] [cursor=pointer]:
+                - img [ref=e124] [cursor=pointer]
+                - text: Código
+        - article [ref=e128]:
+          - img "Api-Pesquisa" [ref=e130]
+          - generic [ref=e131]:
+            - heading "Api-Pesquisa" [level=3] [ref=e132]
+            - paragraph [ref=e133]: API para gerenciar pesquisas de satisfação de clientes com funcionalidades de criação de pesquisas, perguntas, respostas e exportação de respostas em CSV.
+            - generic [ref=e134]:
+              - generic [ref=e135]: NestJS
+              - generic [ref=e136]: Prisma
+              - generic [ref=e137]: PostgreSQL
+            - link "Código" [ref=e139] [cursor=pointer]:
+              - /url: https://github.com/Douglas-00/Api-Pesquisa.git
+              - button "Código" [ref=e140] [cursor=pointer]:
+                - img [ref=e141] [cursor=pointer]
+                - text: Código
+        - article [ref=e145]:
+          - img "URL Shortener API" [ref=e147]
+          - generic [ref=e148]:
+            - heading "URL Shortener API" [level=3] [ref=e149]
+            - paragraph [ref=e150]: Este é um serviço de encurtamento de URL com funcionalidade de contabilização de cliques, autenticação de usuários e gerenciamento de URLs encurtadas. O serviço foi implementado com Node.js, utilizando PostgreSQL para o armazenamento de dados e Redis para contabilizar os cliques.
+            - generic [ref=e151]:
+              - generic [ref=e152]: NestJS
+              - generic [ref=e153]: Prisma
+              - generic [ref=e154]: PostgreSQL
+              - generic [ref=e155]: Redis
+            - link "Código" [ref=e157] [cursor=pointer]:
+              - /url: https://github.com/Douglas-00/Api-EncurtadorURLS.git
+              - button "Código" [ref=e158] [cursor=pointer]:
+                - img [ref=e159] [cursor=pointer]
+                - text: Código
+        - article [ref=e163]:
+          - img "Api-Gerenciador-de-Usuarios" [ref=e165]
+          - generic [ref=e166]:
+            - heading "Api-Gerenciador-de-Usuarios" [level=3] [ref=e167]
+            - paragraph [ref=e168]: API de Gerenciamento de Usuários e Arquivos. Esta API foi desenvolvida usando o Node.js e o ORM Prisma. Ela oferece recursos para gerenciar usuários e arquivos, incluindo a criação, exclusão, atualização e listagem de usuários, consulta de informações de usuário na API pública do GitHub.
+            - generic [ref=e169]:
+              - generic [ref=e170]: NestJS
+              - generic [ref=e171]: Prisma
+              - generic [ref=e172]: PostgreSQL
+            - link "Código" [ref=e174] [cursor=pointer]:
+              - /url: https://github.com/Douglas-00/ApiRest.git
+              - button "Código" [ref=e175] [cursor=pointer]:
+                - img [ref=e176] [cursor=pointer]
+                - text: Código
+    - generic [ref=e180]:
+      - generic [ref=e181]:
+        - heading "Entre em Contato" [level=2] [ref=e182]
+        - paragraph [ref=e183]: Fique à vontade para entrar em contato comigo através do formulário abaixo ou pelos meios de contato direto.
+      - generic [ref=e184]:
+        - generic [ref=e187]:
+          - generic [ref=e188]:
+            - generic [ref=e189]: Nome *
+            - textbox "Nome *" [ref=e190]
+          - generic [ref=e191]:
+            - generic [ref=e192]: Email *
+            - textbox "Email *" [ref=e193]
+          - generic [ref=e194]:
+            - generic [ref=e195]: Mensagem *
+            - textbox "Mensagem *" [ref=e196]
+          - button "Enviar Mensagem" [ref=e197] [cursor=pointer]
+        - generic [ref=e199]:
+          - generic [ref=e200]:
+            - heading "Informações de Contato" [level=3] [ref=e201]
+            - paragraph [ref=e202]: Estou sempre aberto a novas oportunidades e colaborações. Entre em contato!
+          - generic [ref=e203]:
+            - link "Email douglasalvessouza0@gmail.com" [ref=e204] [cursor=pointer]:
+              - /url: mailto:douglasalvessouza0@gmail.com
+              - img [ref=e206] [cursor=pointer]
+              - generic [ref=e209] [cursor=pointer]:
+                - paragraph [ref=e210] [cursor=pointer]: Email
+                - paragraph [ref=e211] [cursor=pointer]: douglasalvessouza0@gmail.com
+            - link "Telefone (11) 95059-2791" [ref=e212] [cursor=pointer]:
+              - /url: tel:+5511950592791
+              - img [ref=e214] [cursor=pointer]
+              - generic [ref=e216] [cursor=pointer]:
+                - paragraph [ref=e217] [cursor=pointer]: Telefone
+                - paragraph [ref=e218] [cursor=pointer]: (11) 95059-2791
+          - generic [ref=e219]:
+            - heading "Redes Sociais" [level=4] [ref=e220]
+            - generic [ref=e221]:
+              - link "LinkedIn" [ref=e222] [cursor=pointer]:
+                - /url: https://www.linkedin.com/in/douglas-alves-de-souza-b3b901179/
+                - img [ref=e223] [cursor=pointer]
+                - generic [ref=e227] [cursor=pointer]: LinkedIn
+              - link "GitHub" [ref=e228] [cursor=pointer]:
+                - /url: https://github.com/Douglas-00
+                - img [ref=e229] [cursor=pointer]
+                - generic [ref=e232] [cursor=pointer]: GitHub
+  - contentinfo [ref=e233]:
+    - generic [ref=e235]:
+      - paragraph [ref=e236]: © 2025 Douglas Souza. Todos os direitos reservados.
+      - generic [ref=e237]:
+        - link "Sobre" [ref=e238] [cursor=pointer]:
+          - /url: "#about"
+        - link "Projetos" [ref=e239] [cursor=pointer]:
+          - /url: "#projects"
+        - link "Contato" [ref=e240] [cursor=pointer]:
+          - /url: "#contact"
+      - generic [ref=e241]:
+        - link "LinkedIn" [ref=e242] [cursor=pointer]:
+          - /url: https://www.linkedin.com/in/douglas-alves-de-souza-b3b901179/
+          - img [ref=e243] [cursor=pointer]
+          - generic [ref=e247] [cursor=pointer]: LinkedIn
+        - link "GitHub" [ref=e248] [cursor=pointer]:
+          - /url: https://github.com/Douglas-00
+          - img [ref=e249] [cursor=pointer]
+          - generic [ref=e252] [cursor=pointer]: GitHub
+  - region "Notifications alt+T"
+```

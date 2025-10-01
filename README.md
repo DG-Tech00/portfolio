@@ -1,98 +1,72 @@
-# Portfolio V2 - Douglas Souza
+# 🚀 Portfolio - Douglas Souza
 
-Portfolio profissional desenvolvido com Next.js 15, TypeScript e Tailwind CSS.
+Portfolio profissional desenvolvido com as tecnologias mais modernas do mercado.
 
-## 🚀 Tecnologias
+## 🛠️ Tecnologias
 
-- **Framework**: Next.js 15 (App Router)
-- **Linguagem**: TypeScript
-- **Estilização**: Tailwind CSS
-- **Animações**: Framer Motion
-- **Formulários**: React Hook Form + Zod
-- **Email**: EmailJS
-- **UI Components**: Radix UI
-- **Qualidade de Código**: ESLint, Prettier, Husky, Commitlint
+- **Next.js 15** - Framework React
+- **TypeScript** - Tipagem estática
+- **Tailwind CSS** - Estilização
+- **Framer Motion** - Animações
+- **EmailJS** - Envio de emails
+- **React Hook Form** - Gerenciamento de formulários
+- **Zod** - Validação de schemas
 
-## 📦 Instalação
+## 🚀 Como Executar
 
 ```bash
 # Instalar dependências
 yarn install
 
-# ou
-npm install
-```
-
-## 🛠️ Scripts Disponíveis
-
-```bash
 # Desenvolvimento
 yarn dev
 
-# Build
+# Build de produção
 yarn build
 
-# Produção
+# Executar produção
 yarn start
-
-# Lint
-yarn lint
-
-# Formatação
-yarn format
-
-# Type Check
-yarn type-check
 ```
 
-## ⚙️ Configuração
+## 📝 Configuração
 
-1. Copie o arquivo `.env.example` para `.env.local`
-2. Preencha as variáveis de ambiente necessárias (EmailJS)
+Crie um arquivo `.env.local` na raiz do projeto:
 
-## 📁 Estrutura do Projeto
-
-```
-portfolio-v2/
-├── src/
-│   ├── app/              # App Router (Next.js 15)
-│   ├── components/       # Componentes React
-│   │   ├── ui/          # Componentes de UI reutilizáveis
-│   │   ├── layout/      # Componentes de layout
-│   │   └── sections/    # Seções da página
-│   ├── lib/             # Utilitários e configurações
-│   ├── providers/       # Context Providers
-│   ├── services/        # Serviços (API, email, etc)
-│   ├── styles/          # Estilos globais e tokens
-│   └── hooks/           # Custom hooks
-├── public/              # Arquivos estáticos
-└── ...
+```env
+NEXT_PUBLIC_EMAILJS_SERVICE_ID=seu_service_id
+NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=seu_template_id
+NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=sua_public_key
+NEXT_PUBLIC_SITE_URL=https://seusite.com
 ```
 
-## 🎨 Design System
+## 🧪 Testes
 
-O projeto utiliza Design Tokens para manter consistência visual:
+### Testes Unitários (Jest + Testing Library)
 
-- Cores (light/dark mode)
-- Espaçamentos
-- Tipografia
-- Sombras
-- Border Radius
-- Transições
+```bash
+# Modo watch (desenvolvimento)
+yarn test
 
-## 📝 Convenções de Commit
+# Modo CI (uma vez)
+yarn test:ci
 
-Este projeto usa Conventional Commits:
+# Com cobertura
+yarn test:ci --coverage
+```
 
-- `feat:` Nova funcionalidade
-- `fix:` Correção de bug
-- `docs:` Documentação
-- `style:` Formatação
-- `refactor:` Refatoração
-- `perf:` Performance
-- `test:` Testes
-- `chore:` Manutenção
+### Testes E2E (Playwright)
+
+```bash
+# Rodar todos os testes E2E
+yarn test:e2e
+
+# Rodar com interface gráfica
+yarn test:e2e:ui
+
+# Rodar em modo debug
+yarn test:e2e --debug
+```
 
 ## 📄 Licença
 
-Este projeto é privado e de uso pessoal.
+© 2025 Douglas Souza. Todos os direitos reservados.

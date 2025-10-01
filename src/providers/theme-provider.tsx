@@ -24,14 +24,15 @@ export function ThemeProvider({
   defaultTheme = "system",
   storageKey = "portfolio-theme",
 }: ThemeProviderProps) {
-  const [theme, setTheme] = useState<Theme>(defaultTheme);
-
-  useEffect(() => {
-    const stored = localStorage.getItem(storageKey) as Theme;
-    if (stored) {
-      setTheme(stored);
+  const [theme, setTheme] = useState<Theme>(() => {
+    // No servidor, usa defaultTheme
+    // No cliente, lê do localStorage (já aplicado pelo script inline)
+    if (typeof window !== "undefined") {
+      const stored = localStorage.getItem(storageKey) as Theme;
+      return stored || defaultTheme;
     }
-  }, [storageKey]);
+    return defaultTheme;
+  });
 
   useEffect(() => {
     const root = window.document.documentElement;
