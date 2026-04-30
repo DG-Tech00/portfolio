@@ -12,11 +12,11 @@ export const Textarea = forwardRef<HTMLTextAreaElement, TextareaProps>(
     const textareaId = id || label?.toLowerCase().replace(/\s/g, "-");
 
     return (
-      <div className="w-full">
+      <div className="w-full space-y-1.5">
         {label && (
           <label
             htmlFor={textareaId}
-            className="mb-2 block text-sm font-medium text-foreground"
+            className="text-sm font-semibold text-foreground/80 ml-1"
           >
             {label}
           </label>
@@ -24,12 +24,14 @@ export const Textarea = forwardRef<HTMLTextAreaElement, TextareaProps>(
         <textarea
           id={textareaId}
           className={cn(
-            "flex min-h-[120px] w-full rounded-md border border-border bg-background px-4 py-2 text-base transition-colors",
-            "placeholder:text-muted-foreground",
-            "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2",
+            "flex min-h-[120px] w-full rounded-xl border border-border bg-background px-4 py-2 text-base transition-all",
+            "placeholder:text-muted-foreground/50",
+            "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/20 focus-visible:border-primary",
             "disabled:cursor-not-allowed disabled:opacity-50",
+            "hover:border-primary/50",
             "resize-y",
-            error && "border-red-500 focus-visible:ring-red-500",
+            error &&
+              "border-destructive focus-visible:ring-destructive/20 focus-visible:border-destructive",
             className
           )}
           ref={ref}
@@ -40,7 +42,7 @@ export const Textarea = forwardRef<HTMLTextAreaElement, TextareaProps>(
         {error && (
           <p
             id={`${textareaId}-error`}
-            className="mt-1 text-sm text-red-600"
+            className="mt-1 text-xs font-medium text-destructive ml-1"
             role="alert"
           >
             {error}

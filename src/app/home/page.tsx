@@ -1,9 +1,12 @@
 import { Nav } from "@/components/layout/nav";
 import { Footer } from "@/components/layout/footer";
-import { HeroSection } from "@/components/sections/hero-section";
-import { AboutSection } from "@/components/sections/about-section";
-import { ProjectsSection } from "@/components/sections/projects-section";
-import { ContactSection } from "@/components/sections/contact-section";
+import {
+  HeroSection,
+  AboutSection,
+  SkillsSection,
+  ProjectsSection,
+  ContactSection,
+} from "@/components/sections";
 
 export default function HomePage() {
   return (
@@ -12,6 +15,7 @@ export default function HomePage() {
       <main id="main-content">
         <HeroSection />
         <AboutSection />
+        <SkillsSection />
         <ProjectsSection />
         <ContactSection />
       </main>

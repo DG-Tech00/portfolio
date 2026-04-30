@@ -17,6 +17,14 @@ const config: Config = {
         foreground: "hsl(var(--color-foreground) / <alpha-value>)",
         muted: "hsl(var(--color-muted) / <alpha-value>)",
         border: "hsl(var(--color-border) / <alpha-value>)",
+        card: {
+          DEFAULT: "hsl(var(--color-card) / <alpha-value>)",
+          foreground: "hsl(var(--color-card-foreground) / <alpha-value>)",
+        },
+        popover: {
+          DEFAULT: "hsl(var(--color-popover) / <alpha-value>)",
+          foreground: "hsl(var(--color-popover-foreground) / <alpha-value>)",
+        },
       },
       fontFamily: {
         sans: ["var(--font-sans)"],
