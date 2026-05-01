@@ -2,10 +2,10 @@ export const portfolioData = {
   personal: {
     name: "Douglas Souza",
     role: "Desenvolvedor Full-Stack",
-    bio: "Sou Desenvolvedor Full Stack com mais de 5 anos de experiência em engenharia de software, especializado em Node.js com TypeScript. Ao longo da minha trajetória, tenho atuado na construção de microserviços escaláveis, integração de sistemas complexos e desenvolvimento de soluções robustas para ambientes de alta performance. Tenho domínio em arquitetura de software, aplicando princípios como SOLID e Clean Architecture para garantir manutenibilidade e escalabilidade. Minha stack principal inclui NestJS no backend, bancos de dados relacionais (PostgreSQL, MySQL) e NoSQL (MongoDB), além de sistemas de mensageria como RabbitMQ e Redis. Atualmente, atuo como Desenvolvedor Full Stack Pleno, liderando revisões de código, promovendo boas práticas de desenvolvimento e acelerando a evolução técnica da equipe por meio de Pair Programming e mentoria. Tenho forte atuação na automação de processos e na entrega contínua de valor em ambientes ágeis.",
+    bio: "Sou Desenvolvedor Full Stack com mais de 6 anos de experiência em engenharia de software, especializado em Node.js com TypeScript. Ao longo da minha trajetória, tenho atuado na construção de microserviços escaláveis, integração de sistemas complexos e desenvolvimento de soluções robustas para ambientes de alta performance. Tenho domínio em arquitetura de software, aplicando princípios como SOLID e Clean Architecture para garantir manutenibilidade e escalabilidade. Minha stack principal inclui NestJS no backend, bancos de dados relacionais (PostgreSQL, MySQL) e NoSQL (MongoDB), além de sistemas de mensageria como RabbitMQ e Redis. Atualmente, atuo como Desenvolvedor Full Stack Pleno, liderando revisões de código, promovendo boas práticas de desenvolvimento e acelerando a evolução técnica da equipe por meio de Pair Programming e mentoria. Tenho forte atuação na automação de processos e na entrega contínua de valor em ambientes ágeis.",
     description:
       "Entrego soluções escaláveis e de alta qualidade, com foco em arquitetura limpa, integração de sistemas e automação de processos. Lidero revisões de código e apoio o crescimento técnico da equipe por meio de Pair Programming e mentoria ativa.",
-    image: "/images/foto_perfil.jpg",
+    image: "/images/foto_perfil.png",
     email: "douglasalvessouza0@gmail.com",
     github: "https://github.com/Douglas-00",
     linkedin: "https://www.linkedin.com/in/douglas-alves-de-souza-b3b901179/",

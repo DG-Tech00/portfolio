@@ -75,7 +75,7 @@ export function AboutSection() {
 
             {/* Experience Badge */}
             <div className="absolute -bottom-6 -right-6 p-6 bg-background border border-border rounded-2xl shadow-xl">
-              <div className="text-3xl font-bold text-primary">5+</div>
+              <div className="text-3xl font-bold text-primary">6+</div>
               <div className="text-sm font-medium text-foreground/60">
                 Anos de Experiência
               </div>
